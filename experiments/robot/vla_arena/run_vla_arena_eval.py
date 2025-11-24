@@ -28,6 +28,7 @@ from vla_arena_utils import (
     quat2axisangle,
     save_rollout_video,
 )
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 from experiments.robot.openvla_utils import get_processor
 from experiments.robot.robot_utils import (
     DATE_TIME,
