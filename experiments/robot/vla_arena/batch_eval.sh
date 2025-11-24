@@ -316,7 +316,6 @@ run_evaluation() {
         --adjust_light $LIGHT \
         --randomize_color $COLOR \
         --camera_offset $CAMERA \
-        --safety True \
         --save_video_mode \"first_success_failure\""
     
     if [[ "$DRY_RUN" == true ]]; then
