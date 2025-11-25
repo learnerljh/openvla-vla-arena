@@ -62,7 +62,7 @@ class GenerateConfig:
 
     center_crop: bool = True                         # Center crop? (if trained w/ random crop image aug)
 
-    unnorm_key: Union[str, Path] = "libero_spatial"                # Action un-normalization key
+    unnorm_key: Union[str, Path] = "vla_arena"                # Action un-normalization key
     num_open_loop_steps: int = 8                     # Number of actions to execute open-loop before requerying policy
 
     load_in_8bit: bool = False                       # (For OpenVLA only) Load with 8-bit quantization
