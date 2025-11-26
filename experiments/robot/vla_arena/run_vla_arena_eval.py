@@ -62,7 +62,7 @@ class GenerateConfig:
 
     center_crop: bool = True                         # Center crop? (if trained w/ random crop image aug)
 
-    unnorm_key: Union[str, Path] = "vla_arena"                # Action un-normalization key
+    unnorm_key: Union[str, Path] = "libero_spatial_no_noops"                # Action un-normalization key
     num_open_loop_steps: int = 8                     # Number of actions to execute open-loop before requerying policy
 
     load_in_8bit: bool = False                       # (For OpenVLA only) Load with 8-bit quantization
@@ -130,8 +130,7 @@ def initialize_model(cfg: GenerateConfig):
 
 def check_unnorm_key(cfg: GenerateConfig, model) -> None:
     """Check that the model contains the action un-normalization key."""
-    # Initialize unnorm_key
-    unnorm_key = 'libero_spatial'
+    unnorm_key = cfg.unnorm_key
 
     # In some cases, the key must be manually modified (e.g. after training on a modified version of the dataset
     # with the suffix "_no_noops" in the dataset name)

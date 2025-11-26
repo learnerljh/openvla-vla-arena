@@ -14,7 +14,8 @@ SUMMARY_FILE="$RESULTS_DIR/batch_evaluation_summary.txt"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 
 # Default configuration (can be overridden)
-DEFAULT_CHECKPOINT="your/path/to/model"
+DEFAULT_CHECKPOINT="/DATA/disk0/borong/openvla/new_runs_with_long/openvla-7b+libero_spatial_no_noops+b16+lr-0.0005+lora-r32+dropout-0.0--image_aug--50000_chkpt
+"
 DEFAULT_MODEL_FAMILY="openvla"
 DEFAULT_NUM_TRIALS=10
 DEFAULT_SEED=7

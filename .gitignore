@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+rollouts/
+runs/
+adapter-tmp/
+experiments/logs/
+experiments/robot/vla_arena/batch_results/
